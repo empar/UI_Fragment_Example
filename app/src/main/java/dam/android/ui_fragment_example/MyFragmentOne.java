@@ -157,10 +157,11 @@ public class MyFragmentOne extends Fragment implements View.OnClickListener {
     }
 
 
-
     @Override
     public void onDestroy() {
         super.onDestroy();
+
+
         Toast.makeText(getActivity(), "onDESTROY-" + getTag(), Toast.LENGTH_LONG).show();
     }
 }
