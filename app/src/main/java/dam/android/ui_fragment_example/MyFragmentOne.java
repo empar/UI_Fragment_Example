@@ -35,8 +35,8 @@ public class MyFragmentOne extends Fragment implements View.OnClickListener {
 
     // interface per a què l'activity la implemente
     public interface OnButtonClickListener {
-        public void onButtonClickToActivity(String text);
-        public void onButtonClickToFragmentTwo(String text);
+        void onButtonClickToActivity(String text);
+        void onButtonClickToFragmentTwo(String text);
     }
 
     public MyFragmentOne() {
@@ -155,7 +155,6 @@ public class MyFragmentOne extends Fragment implements View.OnClickListener {
         //getArguments().putString("Hello", helloString);
 
     }
-
 
     @Override
     public void onDestroy() {
