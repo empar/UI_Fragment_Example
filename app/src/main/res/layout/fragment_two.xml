@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello from fragment two"
+        android:freezesText="true"
+        android:id="@+id/tvFragmentTwo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="7"
+        android:id="@+id/etFragmentTwo"
+        android:layout_below="@+id/tvFragmentTwo"
+        android:layout_alignParentStart="true"
+        android:hint="write a number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text To Activity"
+        android:id="@+id/buttonFragmentTwoToActivity"
+        android:layout_below="@+id/etFragmentTwo"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text To Fragment One"
+        android:id="@+id/buttonFragmentTwoToFragmentOne"
+        android:layout_below="@+id/buttonFragmentTwoToActivity"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
